@@ -1,4 +1,4 @@
-# OWASPjuiceshop
+# OWASP Top 10 "Juice Shop"
 ## Compromising Accounts
 - Using Burp Suite on Kali Linux, I opened the proxy browser and proceeded to navigate to “192.168.141.128:3000”  where  the  website  in question  is  currently  being  hosted.  Once  the page was loaded, I navigated to the “login” or “account” page. This is when I inserted dummy information into the form and submitted it. I then went back into the burp suite where I moved forward (continued the requests to move the action forward) until the data for “email” and “password” appeared.
 - Then I highlighted the entire code, right clicked for options, and sent it to “intruder”. Switching to      the      intruder      tab,      I      loaded      a      payload      from      Kali      Linux      under “/usr/share/wordlists/wfuzz/SQL.txt”.  Unfortunately,  no  results  from  these  SQL  Injections succeeded.
